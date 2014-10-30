@@ -1,0 +1,21 @@
+
+
+ <?php foreach ($this->items as $dato){ ?>
+        <tr style="background-color:<?php echo $this->cycle(array("#F0F0F0","#FFFFFF"))->next()?>">
+
+            <td><?php echo $dato["id"] ?></td>
+            <td><?php echo $dato["id_c"] ?></td>
+            <td><?php echo $dato["nombre_c"] ?></td>
+            <td><?php echo $dato["tipo"] ?></td>
+            <td><?php echo $dato["nombre"] ?></td>
+            <td><?php echo $dato["puesto"] ?></td>
+            <td>
+                <a href="<?php echo $this->basePath()?>/tablas<?php echo ""?>">ver</a>
+            </td>
+        </tr>
+        <br>
+ <?php } ?>
+
+
+
+
